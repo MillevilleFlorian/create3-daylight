@@ -16,7 +16,10 @@
     /* opacity */
     --muted-opacity: .6;
     /* transitions */
+
+    /* position */
 }
+
 
 /*------------------------------------*\
 #GENERIC
@@ -347,6 +350,8 @@ input::placeholder {
 
 .c-horizon__sun {
     position: absolute;
+    left: var(--local-sun-position-left);
+    bottom: var(--local-sun-position-bottom);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -375,6 +380,11 @@ input::placeholder {
 /*
     Change the theme using CSS vars.
 */
+.is-night {
+    --global-color-day:  #0f3557;
+    --global-color-night:  #cce7ff;
+}
+
 
 /* Night version: just switch the light and dark vars */
 
